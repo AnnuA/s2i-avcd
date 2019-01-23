@@ -1,8 +1,8 @@
 #!/bin/bash
 echo "*********Before assembling"
 cp /tmp/src/* .
-cp -r /tmp/src/avcd /usr
-./install_adpl.sh -i -p avocado-2.0.57-1.x86_64.rpm -f -m
+sudo cp -r /tmp/src/avcd /usr
+sudo ./install_adpl.sh -i -p avocado-2.0.57-1.x86_64.rpm -f -m
 
 /usr/libexec/s2i/assemble
 rc=$?
