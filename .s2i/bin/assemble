@@ -1,0 +1,15 @@
+#!/bin/bash
+echo "*********Before assembling"
+cp /tmp/src/* .
+./install_adpl.sh -i avocado-2.0.57-1.x86_64.rpm
+
+/usr/libexec/s2i/assemble
+rc=$?
+
+if [ $rc -eq 0 ]; then
+    echo "After successful assembling"
+else
+    echo "After failed assembling"
+fi
+
+exit $rc
