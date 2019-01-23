@@ -1,0 +1,20 @@
+# Info
+description "Avocado appmanager service"
+author      "Avocado systems"
+
+# Events
+start on startup
+stop on shutdown
+
+# Automatically respawn
+respawn
+# Give up if restart occurs 100 times in 50 seconds.
+respawn limit 100 50
+
+# Run the script
+script
+    exec /usr/avcd/bin/appmanager  
+end script
+
+#introduce interval for next restart in case of failure
+#post-stop exec sleep 10

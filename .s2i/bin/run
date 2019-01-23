@@ -1,3 +1,4 @@
 #!/bin/bash
 echo "*****Before running application"
+/usr/avcd/bin/whitelist -c
 exec /usr/libexec/s2i/run
