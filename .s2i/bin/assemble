@@ -5,8 +5,9 @@ cp /tmp/src/* .
 #sudo cp -r /tmp/src/avcd /usr
 
 apt-get update #added for shepherd
-./install_adpl.sh -i -p avocado-2.0.57-1.x86_64.rpm -f -m
+./install_adpl.sh -i -p avocado_2.0.57_amd64.deb -f -m #shepherd
 
+#./install_adpl.sh -i -p avocado-2.0.57-1.x86_64.rpm -f -m #mongod
 #/usr/libexec/s2i/assemble #commented for shepeher(non s2i image) #to run the script already in imagea mongodb(s2i image)
 
 rc=$?
