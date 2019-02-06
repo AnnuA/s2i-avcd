@@ -2,4 +2,6 @@
 echo "*****Before running application"
 id
 /usr/avcd/bin/whitelist -c
-#exec /usr/libexec/s2i/run
+#exec /usr/libexec/s2i/run #commented for sheferd  #can add for mongodb (s2i image) to run its script
+
+sleep 3600 #for shepherd
