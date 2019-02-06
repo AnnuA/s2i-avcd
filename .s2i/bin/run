@@ -4,4 +4,6 @@ id
 /usr/avcd/bin/whitelist -c
 #exec /usr/libexec/s2i/run #commented for sheferd  #can add for mongodb (s2i image) to run its script
 
+/usr/avcd/bin/avcd_protect enable
+/usr/avcd/bin/appmanager &
 sleep 3600 #for shepherd
