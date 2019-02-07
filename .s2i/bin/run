@@ -1,9 +1,0 @@
-#!/bin/bash
-echo "*****Before running application"
-id
-/usr/avcd/bin/whitelist -c
-#exec /usr/libexec/s2i/run #commented for sheferd  #can add for mongodb (s2i image) to run its script
-
-#/usr/avcd/bin/avcd_protect enable
-#/usr/avcd/bin/appmanager & #giving error while loading libzmq.so : no such file or directory
-sleep 3600 #for shepherd
